@@ -24,6 +24,8 @@ export const GET: RequestHandler = async () => {
         .slice(path.lastIndexOf("/") + 1)
         .replace(".md", "");
 
+      console.log(`Loading post: ${slug}`); // Debugging line
+
       return {
         slug,
         metadata: markdownPostModule.metadata
@@ -35,6 +37,8 @@ export const GET: RequestHandler = async () => {
 
   // load all posts concurrently
   const posts = await Promise.all(postPromises);
+
+  console.log("Posts loaded:", posts); // Debugging line
 
   // sort by publication date (descending/most recent first)
   const sortedPosts = posts.sort((post1, post2) => {

@@ -1,7 +1,7 @@
 <section class="px-4 py-6">
   <div class="h-40 w-40 overflow-hidden rounded-full">
     <img
-      src="/profile-pic-for-blog.jpg"
+      src="/jay-profile-picture.jpg"
       alt="Profile"
       class="object-cover"
     />

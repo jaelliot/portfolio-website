@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
+    "dev": "svelte-kit sync && vite dev",
+    "build": "svelte-kit sync && vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -13,7 +13,8 @@
     "generate-migrations": "drizzle-kit generate:pg",
     "studio": "drizzle-kit studio",
     "migrate": "tsx db/migrate",
-    "seed": "tsx db/seed"
+    "seed": "tsx db/seed",
+    "clean": "rm -rf node_modules .svelte-kit build"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
