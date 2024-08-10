@@ -8,15 +8,12 @@
   </div>
 
   <div class="space-y-2 py-4">
-    <h2 class="text-4xl font-bold">Hey! I'm Josean Martinez.</h2>
+    <h2 class="text-4xl font-bold">Hey! I'm Jay-Alexander Elliot.</h2>
     <p class="text-2xl font-light">
-      I'm a full stack software engineer passionate about web
-      development, Neovim, custom built mechanical keyboards, and
-      sharing what I know.
+      I'm a software engineering student and DevOps engineer passionate about data management, infrastructure optimization, automation, and sharing my knowledge.
     </p>
     <p class="text-2xl font-thin">
-      You can find me on my youtube channel and I also like to blog
-      here to supplement the videos I make!
+      You can find me on <a href="https://www.youtube.com/@Jay-AlexanderElliot">my YouTube channel</a> and <a href="https://jayalexanderelliot.com/blog">my blog</a>, where I share insights and tutorials!
     </p>
   </div>
 </section>

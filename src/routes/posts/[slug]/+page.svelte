@@ -10,6 +10,18 @@
   export let data: PageData;
 
   const { metadata, post: Post } = data;
+
+  // Example of repository data (replace with actual fetched data)
+  const repoData = {
+    id: 840459620,
+    name: "portfolio-website",
+    full_name: "jaelliot/portfolio-website",
+    description: "A portfolio website built with Svelte.",
+    stargazers_count: 0,
+    forks_count: 0,
+    html_url: "https://github.com/jaelliot/portfolio-website",
+    imgUrl: "path/to/image.jpg", // Replace with actual image URL
+  };
 </script>
 
 <svelte:head>
@@ -18,16 +30,14 @@
   <meta property="og:title" content={metadata.title} />
   <meta property="og:type" content="article" />
   <meta property="og:description" content={metadata.summary} />
-  <meta property="og:image" content={metadata.imgUrl} />
+  <meta property="og:image" content={repoData.imgUrl} />
   <meta property="og:url" content={$page.url.href} />
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 <article>
   <PostHeader {metadata} />
 
-  <div
-    class="prose max-w-none px-4 py-4 dark:prose-invert md:prose-lg"
-  >
+  <div class="prose max-w-none px-4 py-4 dark:prose-invert md:prose-lg">
     <CopyCodeInjector>
       <Post />
     </CopyCodeInjector>
@@ -37,8 +47,8 @@
 <div class="px-4 py-4">
   <Giscus
     id="comments"
-    repo="josean-dev/sveltekit-blog"
-    repoId="R_kgDOKBNW8w"
+    repo={repoData.full_name}
+    repoId={repoData.id.toString()}
     category="General"
     categoryId="DIC_kwDOKBNW884CZ5C-"
     mapping="specific"

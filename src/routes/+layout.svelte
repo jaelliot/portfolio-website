@@ -4,14 +4,11 @@
   import { fly } from "svelte/transition";
   import "../app.css";
   import type { LayoutData } from "./$types";
-  import GoogleAnalytics from "$lib/components/GoogleAnalytics.svelte";
 
   export let data: LayoutData;
 
   $: pagePath = data.pathname;
 </script>
-
-<GoogleAnalytics />
 
 <ThemeInitializer>
   <MainHeader />

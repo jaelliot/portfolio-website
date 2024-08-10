@@ -8,21 +8,21 @@
 </script>
 
 <svelte:head>
-  <title>Josean Martinez</title>
+  <title>Jay-Alexander Elliot</title>
   <meta
     name="description"
-    content="Full-stack dev passionate about web dev, neovim, dev workflows, mechanical keyboards and sharing what I know."
+    content="Software Engineering student and DevOps Engineer with a focus on data management, infrastructure optimization, and automation."
   />
-  <meta property="og:title" content="Josean Martinez" />
+  <meta property="og:title" content="Jay-Alexander Elliot" />
   <meta property="og:type" content="website" />
   <meta
     property="og:image"
-    content="https://res.cloudinary.com/martinez-cloud/image/upload/v1691247140/josean-youtube-blog/vim-beginners-tutorial_u32v9a.jpg"
+    content="/assets/river-island.JPG"
   />
   <meta property="og:url" content={$page.url.href} />
   <meta
     property="og:description"
-    content="Full-stack dev passionate about web dev, neovim, dev workflows, mechanical keyboards and sharing what I know."
+    content="Software Engineering student and DevOps Engineer with a focus on data management, infrastructure optimization, and automation."
   />
 </svelte:head>
 

@@ -3,6 +3,6 @@ export function formatPublishedAt(date: string) {
     year: "numeric",
     month: "long",
     day: "numeric",
-    timeZone: "UTC" // don't convert to client's local timezone
+    timeZone: "America/Denver"
   });
 }
